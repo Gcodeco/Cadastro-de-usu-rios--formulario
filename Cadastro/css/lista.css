@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +40,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -47,13 +48,13 @@ label,
 input,
 select,
 button {
-  margin: 10px 0;
+  margin: 4px 0;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 table,
@@ -64,27 +65,18 @@ td {
 
 th,
 td {
-  padding: 10px;
-  text-align: left;
+  padding: 5px;
+  text-align: center;
 }
 
 button {
   padding: 10px;
   cursor: pointer;
 }
-
 .button-container {
   display: flex;
-  justify-content: space-between;
-}
-
-.button-container button {
-  flex: 1;
-  margin-right: 10px;
-}
-
-.button-container button:last-child {
-  margin-right: 0;
+  justify-content: center;
+  margin: 20px 0; /* ajuste conforme necessário */
 }
 
 .button-container button {
@@ -102,8 +94,6 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  padding: 5px 10px;
-  font-size: 14px;
 }
 
 .button-container button:hover {

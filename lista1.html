@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listagem de Produtos</title>
+    <link rel="stylesheet" href="./Cadastro/css/lista.css" />
+  </head>
+  <body id="lista" class="destaque">
+    <div class="container">
+      <div id="lista" class="destaque"><h1>Lista de Produtos</h1></div>
+
+      <h2>Produtos</h2>
+      <div class="button-container">
+        <button id="showForm">
+          <a href="./cadastro.html"> Cadastrar Novo Produto</a>
+        </button>
+      </div>
+      <form class="lista" id="productForm">
+        <table id="productTable">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Ações</th>
+              <!-- Nova coluna -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Produtos serão listados aqui -->
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <script src="./Cadastro/js/scripts.js"></script>
+  </body>
+</html>

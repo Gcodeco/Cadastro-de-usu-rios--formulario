@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     products.forEach((product, index) => {
       const row = productTable.insertRow()
       row.insertCell(0).textContent = product.name
-      row.insertCell(1).textContent = product.price.toFixed(2)
+      row.insertCell(1).textContent = product.description
+      row.insertCell(2).textContent = product.price.toFixed(2)
 
-      const actionsCell = row.insertCell(2)
+      const actionsCell = row.insertCell(3)
       const deleteButton = document.createElement('button')
       deleteButton.textContent = 'Excluir'
       deleteButton.addEventListener('click', () => deleteProduct(index))

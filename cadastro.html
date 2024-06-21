@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro e Listagem de Produtos</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./Cadastro/css/style.css" />
   </head>
-  <body>
-    <div id="menu">
-      <div id="menu-titulo">
+  <body id="cadastro" class="destaque">
+    <div class="container">
+      <div id="cadastro" class="destaque">
         <h1>Cadastro de Produtos</h1>
       </div>
-    </div>
 
-    <div class="container">
       <form id="productForm">
         <label for="productName">Nome do produto:</label>
         <input type="text" id="productName" required />
@@ -31,25 +28,14 @@
           <option value="não">Não</option>
         </select>
 
-        <button type="submit">Cadastrar Produto</button>
-      </form>
+        <div class="button-container">
+          <button type="submit">Cadastrar Produto</button>
 
-      <h2>Lista de Produtos</h2>
-      <button id="showForm">Cadastrar Novo Produto</button>
-      <table id="productTable">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Valor</th>
-            <th>Ações</th>
-            <!-- Nova coluna -->
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Produtos serão listados aqui -->
-        </tbody>
-      </table>
+          <button id="showForm"><a href="./lista1.html">Lista de Produtos</a></button>
+        </div>
+        <table id="productTable"></table>
+      </form>
+      <script src="./Cadastro/js/scripts.js"></script>
     </div>
-    <script src="./js/scripts.js"></script>
   </body>
 </html>
